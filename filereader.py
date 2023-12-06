@@ -3,7 +3,7 @@ def read_file(filename):
     with open("data.txt", "r") as fd:
         book_list = fd.readlines()
         for item in book_list:
-            sol.append(item.split(", "))
+            sol.append(item.strip().split(", "))
 
     return sol
 
