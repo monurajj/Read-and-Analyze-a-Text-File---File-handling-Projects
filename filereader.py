@@ -9,11 +9,9 @@ def read_file(filename):
 
 
 def calculate_average_price(books):
-    s=0
-    for i in books:
-        s += int(i[0])
-    avg = s/len(books)
-    return avg
+    total_price = sum(float(book[1]) for book in books)
+    avg_price = total_price / len(books)
+    return avg_price
 
     
 
