@@ -11,7 +11,7 @@ def read_file(filename):
 def calculate_average_price(books):
     s=0
     for i in books:
-        s += i[0]
+        s += int(i[0])
     avg = s/len(books)
     return avg
 
